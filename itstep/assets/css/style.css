@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter,sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+:root{
+    --gray-background: rgb(34, 34, 34);
+    --white-font: #ffffff;
+    --header-font: 13px; 
+    --display-width: 1200px;
+}
+/* header style */
+header{
+    background-color: var(--gray-background);
+}
+header > div{
+    width: var(--display-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+header > div > div{
+    display: flex;
+    align-items: center;
+}
+header > div ul li{
+    margin-left: 20px;
+    float: left
+
+}
+header > div ul li a{
+    color: var(--white-font);
+    font-size: var(--header-font);
+}
+.right-header-section ul{
+    display: flex;
+    align-items: center;
+}
+.right-header-section ul li:last-child{
+    padding: 5px 7px;
+    background-color: #3963ff;
+    border: none;
+    border-radius: 5px;
+}
+.right-header-section ul li:first-child a{
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+}
+.right-header-section ul li:last-child a{
+    font-weight: bold;
+}
+.left-header-section ul li a{
+    display: flex;
+}
+.left-header-section ul li:first-child a{
+    width: 110px;
+    justify-content: space-between;
+}
+.left-header-section ul li:nth-child(3) a{
+    width: 132px;
+    justify-content: space-between;
+}
+/* content style */
+.main-title-background-div{
+    background-image: url(../bkimg/main-bk-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-title{
+    width: var(--display-width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+}
+.main-title h1{
+    font-size: 60px;
+}
+.main-title span{
+    color: #ffffff;
+}
+.main-title p{
+    padding-top: 20px;
+    font-size: 19px;
+}
+.running-ine {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    background-color: black;
+    overflow: hidden;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 1px solid rgb(126, 126, 126);
+
+}
+.running-ine p{
+    animation: scrolling 5s linear infinite;
+    text-align: center;
+    color: rgb(126, 126, 126);
+    width: 100%;
+}
+@keyframes scrolling {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.mozrdilebi{
+    background-color: black;
+    height: 700px;
+}
+.mozrdilebi h2{
+    width: var(--display-width);
+    color: var(--white-font);
+    font-size: 50px;
+    padding: 100px 0 60px 0;
+}
+.mozrdilebi > div{
+    width: var(--display-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.mozrdilebi > div >div{
+    background-image: url(../bkimg/Design1.webp);
+    background-size: cover;
+    background-color: var(--gray-background);
+    height: 400px;
+    width: 380px;
+    color: var(--white-font);
+    border-radius: 20px;
+    padding: 25px;
+}
+.mozrdilebi > div >div h3{
+    font-size: 30px;
+}
+.mozrdilebi > div >div p{
+    font-size: 20px;
+    padding-top: 10px;
+}
+.bavshvebi{
+    height: 800px;
+}
+.bavshvebi > div{
+    width: var(--display-width);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+    justify-content: center;
+}
+.bavshvebi > div h2{
+    font-size: 45px;
+    padding-bottom: 60px;
+}
+.bavshvebi > div > div{
+    background-image: url(../bkimg/it_for_children_m.webp);
+    background-size: cover;
+    background-color: rgb(236, 236, 236);
+    height: 400px;
+    width: 380px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.bavshvebi > div > div h3{
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.bavshvebi > div > div p{
+    font-size: 20px;
+}
+.history{
+    background-color: black;
+    height: 900px;
+}
+.history > div{
+    width: var(--display-width);
+    margin: auto;
+}
+.history > div h2{
+    text-align: center;
+    font-size: 40px;
+    color: var(--white-font);
+    padding: 100px 0 50px 0;
+}
+.history > div > div{
+    display: flex;
+    justify-content: space-between;
+}
+.melua{
+    background-image: url(../bkimg/melua.webp);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 280px;
+    border-radius: 20px;
+}
+.kiu{
+    background-image: url(../bkimg/webp);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 280px;
+    border-radius: 20px;
+}
+.alta{
+    background-image: url(../bkimg/19bd7844564de9c9eae49e481d481364.webp);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 280px;
+    border-radius: 20px;
+}
+.wandio{
+    background-image: url(../bkimg/6c2eae9de41e29264eb3c9a0ff4b39b4.webp);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 280px;
+    border-radius: 20px;
+}
+.history > div > div > div h3{
+    color: #ffffff;
+    padding: 10px 0 20px 0;
+    font-size: 25px;
+    font-weight: 500;
+}
+.history > div > div > div p{
+    color: #ffffff;
+    width: 280px;
+    font-size: 25px;
+}
+.history > div > div > div > a{
+    color: #3963ff;
+    margin-top: 100px;
+    position: absolute;
+    bottom: -60px;
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+.history > div > div > div > span{
+    padding-left: 5px;
+    width: 20px;
+}
+.history > div > div > div{
+    position: relative;
+}
+.see-more{
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.see-more a{
+    border: 1px solid rgb(202, 202, 202);
+    padding: 15px 30px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+.companies{
+    background-color: #18191E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+}
+.companies h2{
+    padding: 100px 0 30px 0;
+    font-size: 50px;
+    color: #ffffff;
+}
+.companies span{
+    color: #3963ff
+}
+.companies p{
+    padding-bottom: 50px;
+    color: rgb(151, 151, 151);
+    font-size: 25px;
+}
+.content-bot-section{
+    height: 1500px;
+}
+.support{
+    width: var(--display-width);
+    margin: auto;
+    border-radius: 20px;
+    height: 600px;
+    background: linear-gradient(0.25turn,#111217,#172C45,#118893);
+    display: flex;
+}
+.support{
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+.support > div{
+    padding: 40px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.support h2{
+    font-size: 40px;
+    padding-bottom: 30px;
+    color: #ffffff;
+}
+.support p{
+    font-size: 20px;
+    color: #ffffff;
+    padding-bottom: 100px;
+}
+.support a{
+    padding: 15px 30px;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    background-color: #118893;
+    border-radius: 10px;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+}
+.qanda-section{
+    width: var(--display-width);
+    margin: auto;
+}
+.qanda-section h3{
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    color: #1d1d1f;
+}
+footer{
+    background-color: #111217;;
+}
+.top-footer{
+    width: var(--display-width);
+    margin: auto;
+    display: flex;
+    border-bottom: 1px solid rgb(141, 141, 141);
+}
+.top-footer > div{
+    margin: 40px 70px 40px 0;
+    color: #ffffff;
+    font-size: 14px;
+}
+.top-footer > div a{
+    color: #838485;
+    font-size: 14px;
+}
+.top-footer > div ul li{
+    padding-top: 20px;
+}
+.bot-footer{
+    width: var(--display-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    color: #dfdfdf;
+    font-size: 14px;
+}
+.bot-footer div{
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media all and (max-width: 1300px){
+    /* body{
+        width: 1300px;
+    } */
+    /* header */
+    header > div{
+        width: 900px;
+        margin: auto;
+    }
+    /* content */
+    content{ width: 1000px;}
+    .main-title-background-div{
+        background-size: 100% 100%;
+    }
+    .mozrdilebi{
+        height: 1200px;
+    }
+    .content .mozrdilebi > div{
+        flex-wrap: wrap;
+        width: 800px;
+    }
+    .content .mozrdilebi > div > div{
+        margin-top: 10px;
+    }
+    .history{
+        height: 1200px;
+    }
+    .bavshvebi > div{
+        width: 800px;
+    }
+    .history > div{
+        width: 800px;
+    }
+    .history > div > div{
+        flex-wrap: wrap;
+    }
+    .companies h2{
+        text-align: center;
+    }
+    .support{
+        width: 800px;
+    }
+    .qanda-section{
+        width: 800px;
+    }
+}
+@media all and (max-width: 1000px) {
+    .left-header-section ul li{
+        visibility: hidden;
+    }
+    .right-header-section ul li:last-child{
+        width: 140px;
+        justify-content: center;
+        display: flex;
+    }
+    header > div{
+        width: 700px;
+        margin: auto;
+    }
+    .mozrdilebi{
+        height: 1600px;
+    }
+    .content .mozrdilebi > div{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+    .mozrdilebi-title h2{
+        font-size: 40px;
+        width: 300px;
+        text-align: center;
+    }
+    .content .mozrdilebi > div > div{
+        margin-top: 10px;
+    }
+    .bavshvebi > div{
+        align-items: center;
+        width: 450px;
+    }
+    .history{
+        height: 2400px;
+    }
+    .history > div{
+        width: 450px;
+        justify-content: center;
+    }
+    .history > div > div{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .history > div > div > div{
+        margin-top: 20px;
+    }
+    .companies h2{
+        text-align: center;
+    }
+    .content-bot-section{
+        height: 1800px;
+    }
+    .support{
+        width: 400px;
+        flex-direction: column;
+        height: 900px;
+    }
+    .support > div > img{
+        width: 300px;
+    }
+    .qanda-section{
+        width: 450px;
+        
+    }
+    .qanda-section h3{
+        font-size: 15px;
+    }
+}
